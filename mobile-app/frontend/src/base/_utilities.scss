@@ -1,0 +1,77 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+.u-center-text {
+  text-align: center !important;
+}
+.u-margin-top-negative-big {
+  margin-top: -30rem !important;
+  @include respond(phone) {
+    margin-top: -5rem;
+  }
+  @include respond(small-phone) {
+    margin-top: -5rem;
+  }
+}
+.u-margin-top-negative-small {
+  margin-top: -5rem !important;
+  @include respond(tab-port) {
+    margin-top: 0 !important;
+  }
+  @include respond(phone) {
+    margin-top: -1rem !important;
+  }
+  @include respond(small-phone) {
+    margin-top: -0.4rem !important;
+  }
+}
+.u-margin-buttom-big {
+  margin-bottom: 8rem !important;
+  @include respond(tab-port) {
+    margin-bottom: 5rem !important;
+  }
+  @include respond(phone) {
+    margin-bottom: 2rem !important;
+  }
+  @include respond(small-phone) {
+    margin-bottom: 1rem !important;
+  }
+}
+.u-margin-buttom-medium {
+  margin-bottom: 4rem !important;
+  @include respond(tab-port) {
+    margin-bottom: 3rem !important;
+  }
+  @include respond(phone) {
+    margin-bottom: 1rem !important;
+  }
+  @include respond(small-phone) {
+    margin-bottom: 2rem !important;
+  }
+}
+.u-margin-bottom-small {
+  margin-bottom: 1rem !important;
+  @include respond(phone) {
+    margin-bottom: 0.5rem !important;
+  }
+  @include respond(small-phone) {
+    margin-bottom: 0 !important;
+  }
+}
+.u-margin-top-big {
+  margin-top: 8rem !important;
+  @include respond(phone) {
+    margin-bottom: 3rem !important;
+  }
+  @include respond(small-phone) {
+    margin-bottom: 1rem !important;
+  }
+}
+.u-margin-top-huge {
+  margin-top: 10rem !important;
+  @include respond(phone) {
+    margin-bottom: 6rem !important;
+  }
+  @include respond(small-phone) {
+    margin-bottom: 3rem !important;
+  }
+}

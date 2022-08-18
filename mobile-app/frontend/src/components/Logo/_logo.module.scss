@@ -1,0 +1,34 @@
+@import "../../abstracts/mixins";
+.logo__box {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: .5rem;
+  margin-top: 0.5rem;
+  height: 4rem;
+  @include respond(tab-port) {
+    margin-top: 1rem;
+  }
+  @include respond(phone) {
+    margin-top: 1rem;
+  }
+  @include respond(small-phone) {
+    margin-top: 0.5rem;
+  }
+}
+.logo {
+  height: 2rem;
+  // z-index: -1;
+  @include respond(tab-land) {
+    height: 2rem;
+  }
+  @include respond(tab-port) {
+    height: 1rem;
+  }
+  @include respond(phone) {
+    height: 1rem;
+  }
+  @include respond(small-phone) {
+    height: .5rem;
+  }
+}
