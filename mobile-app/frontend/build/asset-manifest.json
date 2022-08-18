@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d38e58d4.chunk.css",
+    "main.js": "/static/js/main.d4eae3c7.chunk.js",
+    "main.js.map": "/static/js/main.d4eae3c7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d697f00d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d697f00d.js.map",
+    "static/js/2.54903724.chunk.js": "/static/js/2.54903724.chunk.js",
+    "static/js/2.54903724.chunk.js.map": "/static/js/2.54903724.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.d38e58d4.chunk.css.map": "/static/css/main.d38e58d4.chunk.css.map",
+    "static/js/2.54903724.chunk.js.LICENSE.txt": "/static/js/2.54903724.chunk.js.LICENSE.txt",
+    "static/media/avatar.55301a1d.png": "/static/media/avatar.55301a1d.png",
+    "static/media/doctor.e7b74157.jpg": "/static/media/doctor.e7b74157.jpg",
+    "static/media/donoHealthlogo.50aa954d.png": "/static/media/donoHealthlogo.50aa954d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d697f00d.js",
+    "static/js/2.54903724.chunk.js",
+    "static/css/main.d38e58d4.chunk.css",
+    "static/js/main.d4eae3c7.chunk.js"
+  ]
+}

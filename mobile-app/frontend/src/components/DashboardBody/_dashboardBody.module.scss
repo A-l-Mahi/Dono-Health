@@ -1,0 +1,14 @@
+.dashboardHeaderBox{
+  margin-left: 1.3rem;
+}
+.transactionBox{
+    padding: 1rem 3rem;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        &_link{
+          text-decoration: none;
+        }
+    }
+   
+}

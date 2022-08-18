@@ -1,0 +1,120 @@
+@import "../../abstracts/mixins";
+@import "../../abstracts/variables";
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    display: inline-block;
+    border-radius: $border-radius-size;
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-font-size;
+
+    //Change for the button element
+    border: none;
+    cursor: pointer;
+  }
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-primary, 0.2) !important;
+    &::after {
+      transform: scalex(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2) !important;
+  }
+  &__white {
+    background-color: $color-white;
+    color: $color-grey-dark;
+    &::after {
+      background-color: $color-white;
+    }
+  }
+  &__primary {
+    background-color: $color-black;
+    color: $color-white;
+    &::after {
+      background-color: $color-black;
+    }
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: $border-radius-size;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
+.btn__text {
+  &:link,
+  &:visited {
+    color: $color-black;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-black;
+    padding: 0.7rem 0.9rem;
+    margin-top: -1rem;
+    font-size: $default-font-size;
+    transition: all 2s;
+    @include respond(phone) {
+      font-size: 1rem;
+    }
+    @include respond(small-phone) {
+      font-size: 0.9rem;
+    }
+  }
+  &:hover {
+    background-color: $color-black;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+    transform: translateY(0);
+  }
+}
+.btn__text2 {
+  &:link,
+  &:visited {
+    color: $color-white;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-black;
+    padding: 0.7rem 0.9rem;
+    font-size: $default-font-size;
+    transition: all 2s;
+    @include respond(phone) {
+      font-size: 1rem;
+    }
+    @include respond(small-phone) {
+      font-size: 0.9rem;
+    }
+  }
+  &:hover {
+    background-color: $color-black;
+    color: $color-primary;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+    transform: translateY(0);
+  }
+}

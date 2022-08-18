@@ -1,0 +1,21 @@
+@import "../../abstracts/variables";
+@import "../../abstracts/mixins";
+.card {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  &__header {
+    height: 16rem;
+    @include respond(phone) {
+      height: 13rem;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-primary-dark;
+  }
+}
+.border__1{
+  border: 1rem solid #03a9f5;
+
+}
